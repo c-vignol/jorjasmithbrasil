@@ -127,7 +127,8 @@ int main ()
 		printf("Escolha a opção abaixo:\n\n");
 		printf("\t1 - Cadastro na Fanbase\n");
 		printf("\t2 - Consulta de Cadastro na Fanbase\n");
-		printf("\t3 - Cancelamento de Cadastro na Fanbase\n\n");
+		printf("\t3 - Cancelamento de Cadastro na Fanbase\n");
+		printf("\t4 - Sair do Sistema\n\n");
 		printf("Opção: ");//fim do menu
 	
 		scanf("%d",&opcao);//armazenamento da escolha do usuário
@@ -146,6 +147,11 @@ int main ()
 			
 			case 3:	
 			cancelamento();
+			break;
+			
+			case 4:
+			printf("Obrigada por entrar em nosso sistema :)\n");
+			return 0;
 			break;
 			
 			default:
